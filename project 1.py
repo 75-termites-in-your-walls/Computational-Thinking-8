@@ -9,11 +9,11 @@ print ("I have coded before")
 
 
 
-answear = input
-if answear == 1
+answer = input
+if answer == 1
 print ("correct, I have never been to a state fair")
 else:
-print ("incorrect,the correct answear was one")
+print ("incorrect,the correct answer was one")
 
 
 
