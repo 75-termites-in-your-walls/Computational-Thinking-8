@@ -14,7 +14,7 @@ x4 = -180
 y4 = 50
 
 # Section 2 - Setup
-# # TODO - use your own background, and set your four turtles to images of your choice
+
 set_background("cornfield")
 t1 = create_sprite("rocket",x1,y1)
 t2 = create_sprite("red_tailed_hawk",x2,y2)
@@ -22,8 +22,7 @@ t3 = create_sprite("pinetree",x3,y3)
 t4 = create_sprite("rock_climbers2",x4,y4)
 
 # # Section 3 - Racing
-# # TODO - set how much each variable changes by and increase the number of repeats to at least 30
-# # TODO - explain here which sprites are faster or slower
+#the rocket might lose sometimes because of lack of fuel.
 for i in range(30):
     x1 +=random.randint(0,15)
     x2 +=(10)
@@ -35,13 +34,10 @@ for i in range(30):
     t3.goto(x3, y3)
     t4.goto(x4, y4)
 
-    window.update()
-    time.sleep(0.1)
 
+#the falcon or the rocket win,depending on the rocket gets a higher speed factor than the falcon
 # # Section 4 - Winner
-# # TODO - complete the elif for player 2 winning
-# # TODO - write another elif for player 3 and player 4
-s5 = create_sprite("مَلِك܀غيف.gif",-200,-200)
+# s5 = create_sprite("مَلِك܀غيف.gif",-200,-200)
 
 
 if x1 >= x2 and x1 >= x3 and x1 >= x4:
